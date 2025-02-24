@@ -50,7 +50,42 @@ const myFunction= function() {
     
 }
 
-console.log(typeof heros)
+// console.log(typeof heros)
 
 
 // all non premetives datatypes are object and fuction datatypes is function obejct
+
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Memory types in JAVASCRIPT 
+
+// Stack(premetive) , HEAP (NON premetive)
+
+// in stack we got copy of the data 
+// in heap we got reference of the data
+
+// example of stack
+
+let myYtName = "vishallyours"
+
+let another_name = myYtName
+
+another_name = "vishallmine"
+
+// console.log(myYtName)
+// console.log(another_name)
+
+let userOne = {
+    name : "john",
+    email : "john@gmail.com",
+    upi : "user@upi"
+}
+
+let userTwo = userOne
+
+userTwo.email = "vish@google.com"
+
+// console.log(userOne.email)
+// console.log(userTwo.email)
