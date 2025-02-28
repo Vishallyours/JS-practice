@@ -13,14 +13,14 @@ const myArr2 = new Array(1 ,2 ,2 ,2 ,2)
 // myArr.push(7)
 // myArr.pop()
 
-// myArr.unshift(11)
-// myArr.shift()
+// myArr.unshift(11) // add at the beginning
+// myArr.shift() // remove at the beginning
 
-// console.log(myArr.includes(5));
+// console.log(myArr.includes(5)); // check if the element is in the array
 
-// console.log(myArr.indexOf(5));
+// console.log(myArr.indexOf(5)); // get the index of the element
 
-// const newArr = myArr.join()
+// const newArr = myArr.join() // convert array to string
 
 // console.log(myArr);
 
