@@ -56,13 +56,38 @@ const users = [
 ]
 
 users[1].email
-console.log(tinderUser);
 
-console.log(Object.keys(tinderUser)); // datatype of output value is array
+// console.log(tinderUser);
 
-console.log(Object.values(tinderUser)); 
+// console.log(Object.keys(tinderUser)); // datatype of output value is array
 
-console.log(Object.entries(tinderUser));
+// console.log(Object.values(tinderUser));
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+// console.log(Object.entries(tinderUser));
 
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+
+// +++++++++++++destructing an object+++++++++++++
+ const course = {
+    coursename: "js in hindi",
+    price: 1000,
+    courseInstructor: "vish"
+ }
+ //  course.courseInstructor
+
+ const {courseInstructor: ct} = course
+ //  console.log(ct);
+
+ // +++++++++ API ++++++++++
+
+//  {
+//     "name":"pooja",
+//     "coursename": "JavaScript",
+//     "price": "free",
+//  }
+
+[
+    {},
+    {},
+    {}
+]
