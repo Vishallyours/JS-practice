@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Four</title>
+</head>
+<body style="background-color: #212121; color: white;"> 
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+
+<script>
+    // in this example we will create a new list item and add it to the existing list it traverse the dom tree
+    function addLang(langName){
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`;
+        document.querySelector('.language').appendChild(li)
+    }
+    addLang("Python")
+    addLang("Java")
+
+
+    //optimize approach 
+    function addOptiLang(langName){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+
+    }
+    addOptiLang("CPP")
+    addOptiLang("TypeScript")
+
+    // Edit value 
+    
+    const secondLang = document.querySelector('li:nth-child(2)')
+    //  console.log(secondLang)
+    const newLi = document.createElement('li');
+    newLi.textContent = "Ruby"
+    secondLang.replaceWith(newLi)
+
+    // edit 
+    const firstLang = document.querySelector('li:first-child')
+    firstLang.outerHTML = '<li>TypeScript</li>'
+
+    // remove
+
+    const lastLang = document.querySelector('li:last-child');
+    lastLang.remove()
+    
+</script>
+
+</html>
