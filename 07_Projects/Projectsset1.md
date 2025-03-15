@@ -76,3 +76,28 @@ buttons.forEach((button) => {
 });
 
 ```
+switch method
+```javascript
+
+const colorValue = e.target.id 
+
+  switch(colorValue) {
+    case "grey" :
+      body.style.backgroundColor = e.target.id;
+      break
+    case 'white': 
+      body.style.backgroundColor = e.target.id;
+      break
+    case 'blue': 
+      body.style.backgroundColor = e.target.id;
+      break
+    case 'yellow':
+      body.style.backgroundColor = e.target.id;
+      break
+    case 'purple':
+      body.style.backgroundColor = e.target.id;
+      break
+    default:
+      body.style.backgroundColor = "black"
+    }
+```
