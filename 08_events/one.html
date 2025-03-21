@@ -47,14 +47,15 @@ document.getElementById('google').addEventListener('click', (e) => {
 }, false)
 */
     document.querySelector('#images').addEventListener('click',(e)=>{
-        console.log(e.target.tagName);
+        // console.log(e.target.tagName);
         if(e.target.tagName === 'IMG'){
+            console.log(e.target)
             let removeIt = e.target.parentNode
             removeIt.remove()
             console.log(e.target.id);
         }
         
-        // removeIt.parentNode.removeChild(removeIt)
+        // removeIt.parentNode.removeChild(removeIt) // remove with removeChild 
     },false)
 
 </script>
