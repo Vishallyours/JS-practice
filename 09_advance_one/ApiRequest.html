@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121;color: white;">
+    
+    <button id="button">Your Card</button>
+    <div id="card">
+        <div id="card_image"> </div>
+        <div id="name"></div>
+    </div>
+
+</body>
+<script>
+
+    document.getElementById('button').addEventListener('click' , function(){
+        //document.body.style.backgroundColor = 'purple'
+        document.querySelector('#name').innerText = data.login 
+         
+        document.querySelector('#card_image').innerHTML = `<img  src="${data.avatar_url}" alt="avatar"> `
+    })
+
+
+
+
+    const requestURL = "https://api.github.com/users/vishallyours"    
+    const xhr = new XMLHttpRequest();
+    let data;
+    
+    xhr.open('GET', requestURL )
+    xhr.onreadystatechange = function(){
+        console.log(xhr.readyState)
+        if(xhr.readyState === 4){
+            data = JSON.parse(this.responseText)
+            console.log(data)
+        }
+    }
+    xhr.send()
+</script>
+</html>
