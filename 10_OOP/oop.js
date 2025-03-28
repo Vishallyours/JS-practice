@@ -24,7 +24,7 @@ function User(username, loginCount, isLoggedIn){
     return this
 }
 
-const userOne = new User("vishal", 12 , true);
+const userOne = new User("mina", 12 , true);
 const userTwo = new User("pooja", 9 , false);
 
 console.log(userOne.constructor);
