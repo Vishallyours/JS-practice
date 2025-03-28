@@ -26,3 +26,7 @@ Object literal
 - Abstraction
 - Inheritance
 - Polymorphism
+
+
+## prototype is js
+ ![prototype str](prototype%20in%20js.png)
